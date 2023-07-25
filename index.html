@@ -33,7 +33,7 @@
     <header>
         <!-- Start Navbar Section -->
         <nav class="flex justify-center">
-            <div class="flex gap-10 md:gap-[400px] lg:gap-32 text-black lg:text-white p-4 pr-10 rounded-full my-10 items-center justify-center bg-none lg:bg-[#F85559]  ">
+            <div class="flex gap-0  lg:gap-32 text-black lg:text-white lg:p-4 lg:pr-10 rounded-full my-10 items-center justify-center bg-none lg:bg-bg_clr  ">
                 <div>
                     <ul class="hidden lg:flex menu font-medium menu-horizontal px-1">
                       <li ><a>Home</a></li>
@@ -47,7 +47,7 @@
                   <div class="text-3xl font-bold lg:text-4xl w-[220px]">Fruits Brust</div>
                 </div>
                    <!-- DropDown Menu -->
-                   <div class="dropdown">
+                   <div class="dropdown ml-[40px] md:ml-[350px] lg:ml-0">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
@@ -58,9 +58,11 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                   </div>
-                <div>
+                <div class="lg:block hidden rounded-full  p-3 w-[20rem] bg-white">
                   <a>
-                    <input class="rounded-full lg:block hidden p-3 w-[20rem]" type="search" placeholder="Search here">
+                    <input class="w-[16rem]" type="search" placeholder="Search here"><svg class="inline ml[400px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                   </a>
                 </div>
               </div>
@@ -68,6 +70,98 @@
         <!-- End Navbar Section -->
     </header>
     <!-- End Header Section -->
+
+    <!-- Start Main Section -->
+    <main>
+        <!-- Start Carousel Section_01 -->
+        <section class="section_1 mb-52">
+            <div class="flex justify-center ">
+                <div class="carousel w-[90%] z-10">
+                    <!-- Slide 1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <div class="relative">
+                        <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
+                            <div class="text-center">
+                                <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
+                            <p class=" my-2 md:my-5">We supply highly quality organic products</p>
+                            <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                            </div>
+                        </div>
+                        <img  src="./images/banner1.png" class="w-full" />
+                      </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <!-- Slide 2 --> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <div class="relative">
+                            <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
+                                <div class="text-center">
+                                    <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
+                                <p class="my-2 md:my-5">We supply highly quality organic products</p>
+                                <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                                </div>
+                            </div>
+                            <img  src="./images/banner2.png" class="w-full" />
+                          </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <!-- Slide 3 --> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <div class="relative">
+                            <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
+                                <div class="text-center">
+                                    <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
+                                    <p class="my-2 md:my-5">We supply highly quality organic products</p>
+                                    <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                                </div>
+                            </div>
+                            <img  src="./images/banner3.png" class="w-full" />
+                          </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <!-- Slide 4 --> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <div class="relative">
+                            <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
+                                <div class="text-center">
+                                    <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
+                                    <p class="my-2 md:my-5">We supply highly quality organic products</p>
+                                    <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                                </div>
+                            </div>
+                            <img  src="./images/banner4.png" class="w-full" />
+                          </div>
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+              <!-- Bonus Section -->
+              <div class="hidden lg:flex justify-center -mt-[6rem]">
+                <div class="flex py-10 shadow-lg shadow-gray-500/30 bg-white rounded-lg justify-around w-[80%] z-20">
+                    <div><img src="./images/fruit1.png" alt=""></div>
+                    <div><img src="./images/fruit2.png" alt=""></div>
+                    <div><img src="./images/fruit3.png" alt=""></div>
+                    <div><img src="./images/fruit4.png" alt=""></div>
+                    <div><img src="./images/fruit5.png" alt=""></div>
+                    
+                </div>
+              </div>
+        </section>
+        <!-- End Carousel Section_01 -->
+    </main>
+    <!-- End Main Section -->
     
 </body>
 </html>
