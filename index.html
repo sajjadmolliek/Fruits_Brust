@@ -13,8 +13,61 @@
     <link rel="stylesheet" href="style.css">
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Tailwind Customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bg_clr':'#F85559',
+                'bg':'gradient-to-l from-[#F00] to-[#FF8938]'
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
+    <!-- Start Header Section -->
+    <header>
+        <!-- Start Navbar Section -->
+        <nav class="flex justify-center">
+            <div class="flex gap-10 md:gap-[400px] lg:gap-32 text-black lg:text-white p-4 pr-10 rounded-full my-10 items-center justify-center bg-none lg:bg-[#F85559]  ">
+                <div>
+                    <ul class="hidden lg:flex menu font-medium menu-horizontal px-1">
+                      <li ><a>Home</a></li>
+                      <li><a>About </a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                <div class="flex  justify-center ">
+                  <img  src="./images/logo.png" alt="Logo">
+                  <div class="text-3xl font-bold lg:text-4xl w-[220px]">Fruits Brust</div>
+                </div>
+                   <!-- DropDown Menu -->
+                   <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu  text-[#707070] ml-[32] font-semibold menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32">
+                        <li ><a>Home</a></li>
+                        <li><a>About </a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                <div>
+                  <a>
+                    <input class="rounded-full lg:block hidden p-3 w-[20rem]" type="search" placeholder="Search here">
+                  </a>
+                </div>
+              </div>
+        </nav>
+        <!-- End Navbar Section -->
+    </header>
+    <!-- End Header Section -->
     
 </body>
 </html>
