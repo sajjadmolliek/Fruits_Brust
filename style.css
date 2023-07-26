@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 .bg_img{
     background-image: url('images/team.png');
     background-color: rgba(0, 0, 0, 0.471);
