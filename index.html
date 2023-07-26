@@ -32,38 +32,45 @@
     <!-- Start Header Section -->
     <header>
         <!-- Start Navbar Section -->
-        <nav class="flex justify-center">
-            <div class="flex gap-0  lg:gap-40 text-black lg:text-white lg:p-4 lg:pr-10 rounded-full my-10 items-center justify-between bg-none lg:bg-bg_clr  ">
-                <div>
-                    <ul class="hidden lg:flex menu font-medium menu-horizontal px-1">
-                      <li ><a>Home</a></li>
-                      <li><a>About </a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
-                    </ul>
-                  </div>
-                <div class="flex gap-3 items-center justify-center ">
-                  <img  src="./images/logo.png" alt="Logo">
-                  <div class="text-3xl font-bold lg:text-4xl w-[220px]">Fruits Brust</div>
-                </div>
-                   <!-- DropDown Menu -->
-                   <div class="dropdown ml-[40px] md:ml-[350px] lg:ml-0 z-20">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu  text-[#707070] -left-[75px] font-semibold menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32">
-                        <li ><a>Home</a></li>
-                        <li><a>About </a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                  </div>
-                <div class="lg:block hidden rounded-full  p-3 lg:w-[20rem] bg-white">
-                  <a>
-                    <input class="lg:w-[16rem] w-0" type="search" placeholder="Search here"><svg class="inline ml[400px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                  </a>
+        <nav class="flex justify-center items-center max-w-full">
+            <div class=" lg:p-4 lg:pr-10 w-[85%] rounded-full my-10 items-center justify-between bg-none lg:bg-bg_clr  ">
+                <div class="flex flex-1 text-black lg:text-white">
+                    <div>
+                        <ul class="hidden w-[20rem] lg:flex menu font-medium menu-horizontal px-1">
+                          <li ><a>Home</a></li>
+                          <li><a>About </a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 gap-3 items-center justify-center ">
+                            <img  src="./images/logo.png" alt="Logo">
+                            <div class="text-3xl w-[16rem] font-bold lg:text-4xl">Fruits Brust</div>
+                        </div>
+                        <div class="lg:block flex-1 hidden rounded-full lg:max-w-[20rem] bg-white">
+                             <input class="mt-[16px] ml-[27px] w-[70%]"  type="search" placeholder="Search Here"> <svg class="inline" 
+                              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </div>
+                    </div>
+                       <!-- DropDown Menu -->
+                    <div class="dropdown ml-[40px] md:ml-[350px] lg:ml-0 z-20">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu  text-[#707070] -left-[75px] font-semibold menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32">
+                            <li ><a>Home</a></li>
+                            <li><a>About </a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <li >
+                                <input class="block w-[85px] text-[8px]" type="search" placeholder="Search here">
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
               </div>
         </nav>
@@ -76,80 +83,82 @@
         <!-- Start Carousel Section_01 -->
         <section class="section_1 lg:mb-52">
             <div class="flex justify-center ">
-                <div class="carousel w-[95%] z-10 flex-row-reverse">
-                    <!-- Slide 1 -->
-                    <div id="slide1" class="carousel-item relative w-full">
-                      <div class="relative">
-                        <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
-                            <div class="text-center">
-                                <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
-                            <p class=" my-2 md:my-5">We supply highly quality organic products</p>
-                            <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
-                            </div>
-                        </div>
-                        <img  src="./images/banner1.png" class="w-full" />
-                      </div>
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn -ml-[19px] btn-circle">❮</a> 
-                        <a href="#slide2" class="btn -mr-[19px] btn-circle">❯</a>
-                      </div>
-                    </div>
-                    <!-- Slide 2 --> 
-                    <div id="slide2" class="carousel-item relative w-full">
-                        <div class="relative">
+                <div class="w-[85%]">
+                    <div class="carousel w-full z-10">
+                        <!-- Slide 1 -->
+                        <div id="slide1" class="carousel-item block relative w-full">
+                          <div class="relative">
                             <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
                                 <div class="text-center">
                                     <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
-                                <p class="my-2 md:my-5">We supply highly quality organic products</p>
+                                <p class=" my-2 md:my-5">We supply highly quality organic products</p>
                                 <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
                                 </div>
                             </div>
-                            <img  src="./images/banner2.png" class="w-full" />
+                            <img  src="./images/banner1.png" class="w-full" />
                           </div>
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn -ml-[19px] btn-circle">❮</a> 
-                        <a href="#slide3" class="btn -mr-[19px] btn-circle">❯</a>
-                      </div>
-                    </div>
-                    <!-- Slide 3 --> 
-                    <div id="slide3" class="carousel-item relative w-full">
-                        <div class="relative">
-                            <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
-                                <div class="text-center">
-                                    <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
+                          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn bg-black text-white -ml-[19px] btn-circle">❮</a> 
+                            <a href="#slide2" class="btn -mr-[19px] bg-black text-white btn-circle">❯</a>
+                          </div>
+                        </div>
+                        <!-- Slide 2 --> 
+                        <div id="slide2" class="carousel-item block relative w-full">
+                            <div class="relative">
+                                <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
+                                    <div class="text-center">
+                                        <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
                                     <p class="my-2 md:my-5">We supply highly quality organic products</p>
                                     <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <img  src="./images/banner3.png" class="w-full" />
+                                <img  src="./images/banner2.png" class="w-full" />
+                              </div>
+                          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn -ml-[19px] bg-black text-white btn-circle">❮</a> 
+                            <a href="#slide3" class="btn -mr-[19px] bg-black text-white btn-circle">❯</a>
                           </div>
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn -ml-[19px] btn-circle">❮</a> 
-                        <a href="#slide4" class="btn -mr-[19px] btn-circle">❯</a>
-                      </div>
-                    </div>
-                    <!-- Slide 4 --> 
-                    <div id="slide4" class="carousel-item relative w-full">
-                        <div class="relative">
-                            <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
-                                <div class="text-center">
-                                    <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
-                                    <p class="my-2 md:my-5">We supply highly quality organic products</p>
-                                    <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                        </div>
+                        <!-- Slide 3 --> 
+                        <div id="slide3" class="carousel-item block relative w-full">
+                            <div class="relative">
+                                <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
+                                    <div class="text-center">
+                                        <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
+                                        <p class="my-2 md:my-5">We supply highly quality organic products</p>
+                                        <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <img  src="./images/banner4.png" class="w-full" />
+                                <img  src="./images/banner3.png" class="w-full" />
+                              </div>
+                          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn -ml-[19px] bg-black text-white btn-circle">❮</a> 
+                            <a href="#slide4" class="btn -mr-[19px] bg-black text-white btn-circle">❯</a>
                           </div>
-                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn -ml-[19px] btn-circle">❮</a> 
-                        <a href="#slide1" class="btn -mr-[19px] btn-circle">❯</a>
+                        </div>
+                        <!-- Slide 4 --> 
+                        <div id="slide4" class="carousel-item block relative w-full">
+                            <div class="relative">
+                                <div class="absolute flex items-center justify-center w-full h-full rounded-lg bg-black text-white bg-opacity-40">
+                                    <div class="text-center">
+                                        <h1 class="font-bold text-xl md:text-6xl md:leading-[4rem]">Exotic tastes at your <br> doorstep</h1>
+                                        <p class="my-2 md:my-5">We supply highly quality organic products</p>
+                                        <button class="btn border-0 bg-bg_clr text-white">Shop Now</button>
+                                    </div>
+                                </div>
+                                <img  src="./images/banner4.png" class="w-full" />
+                              </div>
+                          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn -ml-[19px] bg-black text-white btn-circle">❮</a> 
+                            <a href="#slide1" class="btn -mr-[19px] bg-black text-white btn-circle">❯</a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                </div>
             </div>
               <!-- Bonus Section -->
               <div class="hidden lg:flex lg:justify-center -mt-[6rem]">
-                <div class="flex text-center py-10 shadow-lg shadow-gray-500/30 bg-white rounded-lg justify-around w-[80%] z-20">
+                <div class="flex text-center py-10 shadow-lg shadow-gray-500/30 bg-white rounded-lg justify-around w-[70%] z-20">
                     <div ><img src="./images/fruit1.png" alt="">
                         <h1>Graph</h1>
                     </div>
@@ -172,7 +181,7 @@
         <!-- End Carousel Section_01 -->
         <!-- Start Deal Of The Day Section_2 -->
         <section class="section_2">
-            <div class="flex flex-col text-center md:text-left md:flex-row gap-14 md:p-0 p-5 md:gap-[25rem] md:justify-around md:items-center">
+            <div class="flex flex-col text-center md:text-left lg:flex-row  lg:gap-14 md:p-0 p-5 md:gap-[2rem] md:justify-around md:items-center">
                 <div>
                     <h1 class="font-bold text-3xl  md:text-5xl">Deal of the day</h1>
                     <p class="max-w-[350px] text-[#12121299] m-auto md:max-w-[615px] text-lg mt-8 mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -415,6 +424,75 @@
             </div>
         </section>
         <!-- End Deal Of The Day Section_2 -->
+
+        <!-- Start Meet The Team Section_3 -->
+        <section class="section_3 flex justify-center ">
+            <div class="w-[85%]">
+                <div class="bg_img rounded-2xl bg-cover w-full bg-no-repeat py-10 lg:py-[10rem]">
+                    <div class="flex text-white justify-center items-center">
+                        <div class="text-center ">
+                            <h1 class="text-5xl font-bold mb-10">Meet the team section</h1>
+                            <p class="max-w-[38rem] px-10 m-auto">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                    <div class="flex  text-white flex-col lg:flex-row gap-10 items-center justify-center mt-10">
+                        <!-- card_1 -->
+                    <div class="card w-[50%] lg:w-[12%]  items-center text-center">
+                        <div class="w-10%">
+                            <img src="./images/member1.png" alt="One">
+                        </div>
+                        <h1 class="font-bold text-xl mt-5">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class="flex gap-3 mt-3">
+                            <i class="fab fa-facebook" style="color: #F85559;"></i>
+                            <i class="fab fa-twitter" style="color: #F85559;"></i>
+                            <i class="fab fa-linkedin" style="color: #F85559;"></i>
+                        </div>
+                    </div>
+                        <!-- card_2 -->
+                    <div class="card w-[50%] lg:w-[12%] items-center text-center">
+                        <div class="w-10%">
+                            <img src="./images/member2.png" alt="One">
+                        </div>
+                        <h1 class="font-bold text-xl mt-5">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class="flex gap-3 mt-3">
+                            <i class="fab fa-facebook" style="color: #F85559;"></i>
+                            <i class="fab fa-twitter" style="color: #F85559;"></i>
+                            <i class="fab fa-linkedin" style="color: #F85559;"></i>
+                        </div>
+                    </div>
+                        <!-- card_3 -->
+                    <div class="card w-[50%] lg:w-[12%] items-center text-center">
+                        <div class="w-10%">
+                            <img src="./images/member3.png" alt="One">
+                        </div>
+                        <h1 class="font-bold text-xl mt-5">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class="flex gap-3 mt-3">
+                            <i class="fab fa-facebook" style="color: #F85559;"></i>
+                            <i class="fab fa-twitter" style="color: #F85559;"></i>
+                            <i class="fab fa-linkedin" style="color: #F85559;"></i>
+                        </div>
+                    </div>
+                        <!-- card_4 -->
+                    <div class="card w-[50%] lg:w-[12%] items-center text-center">
+                        <div class="w-10%">
+                            <img src="./images/member4.png" alt="One">
+                        </div>
+                        <h1 class="font-bold text-xl mt-5">Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class="flex gap-3 mt-3">
+                            <i class="fab fa-facebook" style="color: #F85559;"></i>
+                            <i class="fab fa-twitter" style="color: #F85559;"></i>
+                            <i class="fab fa-linkedin" style="color: #F85559;"></i>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Meet The Team Section_3 -->
     </main>
     <!-- End Main Section -->
     
